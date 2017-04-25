@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/master_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+    android:text="Title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transition"
+        android:onClick="buttonClicked"/>
+
+    <FrameLayout
+        android:id="@+id/scene_root"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <include layout="@layout/a_scene" />
+    </FrameLayout>
+</LinearLayout>
